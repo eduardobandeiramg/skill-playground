@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../../dominio/controllers/navigation_state_management.dart';
 
 class CustomPainterScreen extends StatelessWidget {
   const CustomPainterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<NavigationController>();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
@@ -65,7 +68,7 @@ class MyPainter extends CustomPainter {
           ..color = Colors.yellow
           ..strokeWidth = 5
           ..style = PaintingStyle.stroke;
-    canvas.drawCircle(Offset(size.width, 0), size.width*0.18, sol);
+    canvas.drawCircle(Offset(size.width, 0), size.width * 0.18, sol);
     // Fazendo os raios de sol
     canvas.drawLine(
       Offset(size.width * 0.75, size.height * 0.03),
