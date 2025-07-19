@@ -27,10 +27,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red, //corDoApp,
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      /*      home: Router(
-        routerDelegate: _routerDelegate,
-        routeInformationParser: _routeInformationParser,
-      ),*/
     );
   }
 }
@@ -46,18 +42,3 @@ class _MyRouteInformationParser extends RouteInformationParser<int> {
     return RouteInformation(location: '/');
   }
 }
-
-/*
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Skill Playground',
-      theme: ThemeData(
-        primaryColor: Color.fromRGBO(47, 107, 213, 1),
-        primarySwatch: Colors.red//corDoApp,
-        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const HomePage(),
-    );
-  }
-}*/
