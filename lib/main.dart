@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
 import 'package:skill_playground/dominio/router_delegate/router_delegate.dart';
+import 'package:skill_playground/dominio/utils/dimensoes.dart';
 
 void main() {
   Get.put(NavigationController());
@@ -19,6 +20,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Dimensoes.altura = MediaQuery.of(context).size.height;
+    Dimensoes.largura = MediaQuery.of(context).size.width;
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerDelegate: _routerDelegate,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:skill_playground/apresentacao/screens/animation_controller_screen.dart';
 import 'package:skill_playground/apresentacao/screens/async_isolates.dart';
 import 'package:skill_playground/apresentacao/screens/bloc_screen.dart';
 import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
@@ -8,7 +9,6 @@ import 'package:skill_playground/apresentacao/screens/performance_and_repaints_s
 import 'package:skill_playground/apresentacao/screens/platform_channels_screen.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
 import 'package:skill_playground/dominio/utils/indice_botoes.dart';
-
 import '../../apresentacao/screens/home_page_screen.dart';
 
 class MyRouterDelegate extends RouterDelegate<int>
@@ -36,6 +36,8 @@ class MyRouterDelegate extends RouterDelegate<int>
         if (tela == TelaSelecionada.performanceAndRepaints)
           MaterialPage(child: PerformanceScreen()),
         if (tela == TelaSelecionada.asyncIsolates) MaterialPage(child: AsyncIsolates()),
+        if (tela == TelaSelecionada.animationControllerLifeCycle)
+          MaterialPage(child: AnimationControllerScreen()),
       ],
       onPopPage: (route, result) {
         if (!route.didPop(result)) return false;
