@@ -11,7 +11,7 @@ class CardPerformanceScreen extends StatefulWidget {
 }
 
 class _CardPerformanceScreenState extends State<CardPerformanceScreen> {
-  int valor = 10;
+  int? valor;
 
   @override
   void initState() {
@@ -33,7 +33,7 @@ class _CardPerformanceScreenState extends State<CardPerformanceScreen> {
           borderRadius: BorderRadius.circular(15),
           color: Color(0xFFB9CFF3),
         ),
-        child: Center(child: Text("$valor")),
+        child: Center(child: valor == null ? Text("gerando números aleatórios") : Text("$valor")),
       ),
     );
   }
