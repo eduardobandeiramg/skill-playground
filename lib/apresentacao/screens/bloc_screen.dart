@@ -17,7 +17,7 @@ class _BlocScreenState extends State<BlocScreen> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
         iconTheme: IconThemeData(color: Colors.white),
-        title: Text("Bloc Screen", style: TextStyle(color: Colors.white)),
+        title: Text("Bloc State Management", style: TextStyle(color: Colors.white)),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

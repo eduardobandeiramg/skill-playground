@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:skill_playground/apresentacao/screens/bloc_screen.dart';
 import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
 import 'package:skill_playground/apresentacao/screens/navigator_2_route_screen.dart';
+import 'package:skill_playground/apresentacao/screens/performance_and_repaints_screen.dart';
 import 'package:skill_playground/apresentacao/screens/platform_channels_screen.dart';
 import 'package:skill_playground/dominio/controllers/navigation_state_management.dart';
 import 'package:skill_playground/dominio/utils/indice_botoes.dart';
@@ -30,7 +31,9 @@ class MyRouterDelegate extends RouterDelegate<int>
         if (tela == TelaSelecionada.customPainterBasics) MaterialPage(child: CustomPainterScreen()),
         if (tela == TelaSelecionada.navigator) MaterialPage(child: Navigator2RouteDelegate()),
         if (tela == TelaSelecionada.blocStateManagement) MaterialPage(child: BlocScreen()),
-        if(tela == TelaSelecionada.platformChannels) MaterialPage(child: PlatformChannelsScreen()),
+        if (tela == TelaSelecionada.platformChannels) MaterialPage(child: PlatformChannelsScreen()),
+        if (tela == TelaSelecionada.performanceAndRepaints)
+          MaterialPage(child: PerformanceScreen()),
       ],
       onPopPage: (route, result) {
         if (!route.didPop(result)) return false;

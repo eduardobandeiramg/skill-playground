@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
@@ -7,6 +8,7 @@ import 'package:skill_playground/dominio/router_delegate/router_delegate.dart';
 
 void main() {
   Get.put(NavigationController());
+  debugRepaintRainbowEnabled = false;
   runApp(BlocProvider<CounterCubit>(create: (_) => CounterCubit(), child: MyApp()));
 }
 

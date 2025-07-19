@@ -12,7 +12,7 @@ class CustomPainterScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
         iconTheme: IconThemeData(color: Colors.white),
-        title: Text("Custom Painter", style: TextStyle(color: Colors.white)),
+        title: Text("Custom Painter Basics", style: TextStyle(color: Colors.white)),
       ),
       body: SizedBox.expand(child: CustomPaint(painter: MyPainter())),
     );
