@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
+import 'package:skill_playground/dominio/utils/dimensoes.dart';
 import '../../dominio/utils/indice_botoes.dart';
 import 'package:get/get.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
@@ -12,7 +13,6 @@ class CardHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.find<NavigationController>();
-    double altura = MediaQuery.of(context).size.height;
     return Padding(
       padding: EdgeInsets.all(8.0),
       child: InkWell(
@@ -24,7 +24,7 @@ class CardHomePage extends StatelessWidget {
           return Get.to(CustomPainterScreen());
         },*/
         child: Container(
-          height: altura * 0.1,
+          height: Dimensoes.altura * 0.1,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             color: Color(0xFFB9CFF3),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:skill_playground/dominio/controllers/fibonacci_value_controller.dart';
+import 'package:skill_playground/dominio/utils/dimensoes.dart';
 
 class AsyncIsolates extends StatefulWidget {
   const AsyncIsolates({super.key});
@@ -21,7 +22,6 @@ class _AsyncIsolatesState extends State<AsyncIsolates> {
 
   @override
   Widget build(BuildContext context) {
-    double altura = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
@@ -31,7 +31,7 @@ class _AsyncIsolatesState extends State<AsyncIsolates> {
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.all(altura * 0.1),
+            padding: EdgeInsets.all(Dimensoes.altura * 0.1),
             child: Text("Resultado do cálculo pesado:"),
           ),
           Obx(() {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
+import 'package:skill_playground/dominio/utils/dimensoes.dart';
 
 class BlocScreen extends StatefulWidget {
   const BlocScreen({super.key});
@@ -12,7 +13,6 @@ class BlocScreen extends StatefulWidget {
 class _BlocScreenState extends State<BlocScreen> {
   @override
   Widget build(BuildContext context) {
-    double altura = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
@@ -32,7 +32,7 @@ class _BlocScreenState extends State<BlocScreen> {
           ),
           Center(
             child: Padding(
-              padding: EdgeInsets.only(bottom: altura * 0.25),
+              padding: EdgeInsets.only(bottom: Dimensoes.altura * 0.25),
               child: GestureDetector(
                 onDoubleTap: () {
                   context.read<CounterCubit>().increment();

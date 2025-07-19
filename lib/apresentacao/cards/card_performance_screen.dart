@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:skill_playground/dominio/utils/dimensoes.dart';
 
 class CardPerformanceScreen extends StatefulWidget {
   const CardPerformanceScreen({super.key});
@@ -24,11 +25,10 @@ class _CardPerformanceScreenState extends State<CardPerformanceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    double altura = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.all(12),
       child: Container(
-        height: altura * 0.08,
+        height: Dimensoes.altura * 0.08,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Color(0xFFB9CFF3),
