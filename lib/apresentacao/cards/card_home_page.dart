@@ -13,7 +13,6 @@ class CardHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.find<NavigationController>();
     double altura = MediaQuery.of(context).size.height;
-    double largura = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.all(8.0),
       child: InkWell(

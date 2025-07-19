@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
+import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
 import 'package:skill_playground/dominio/controllers/navigation_state_management.dart';
-import 'package:skill_playground/dominio/utils/primary_swatch.dart';
-import 'apresentacao/screens/home_page.dart';
 import 'package:skill_playground/dominio/router_delegate/router_delegate.dart';
 
 void main() {
   Get.put(NavigationController());
-  runApp(MyApp());
+  runApp(BlocProvider<CounterCubit>(create: (_) => CounterCubit(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
   final MyRouterDelegate _routerDelegate = MyRouterDelegate();
+
   MyApp({super.key});
 
   @override
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red, //corDoApp,
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-/*      home: Router(
+      /*      home: Router(
         routerDelegate: _routerDelegate,
         routeInformationParser: _routeInformationParser,
       ),*/
