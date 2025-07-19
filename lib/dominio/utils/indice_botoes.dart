@@ -1,5 +1,5 @@
 import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
-import 'package:skill_playground/apresentacao/screens/home_page.dart';
+import 'package:skill_playground/apresentacao/screens/home_page_screen.dart';
 import 'package:skill_playground/apresentacao/screens/navigator_2_route_screen.dart';
 
 // enum para pré-listar todas as telas do app e definir o tipo do botão na construção do seu objeto
