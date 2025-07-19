@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
 import '../../dominio/utils/indice_botoes.dart';
 import 'package:get/get.dart';
-import 'package:skill_playground/dominio/controllers/navigation_state_management.dart';
+import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
 
 class CardHomePage extends StatelessWidget {
   final TelaSelecionada telaANavegar;
