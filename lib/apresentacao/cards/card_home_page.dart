@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/2_custom_painter/custom_painter_screen.dart';
 import 'package:skill_playground/dominio/utils/dimensoes.dart';
 import '../../dominio/utils/indice_botoes.dart';
 import 'package:get/get.dart';

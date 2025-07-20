@@ -1,6 +1,6 @@
-import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
-import 'package:skill_playground/apresentacao/screens/home_page_screen.dart';
-import 'package:skill_playground/apresentacao/screens/navigator_2_route_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/2_custom_painter/custom_painter_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/1_home/home_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/3_router_2/router_2_screen.dart';
 
 // enum para pré-listar todas as telas do app e definir o tipo do botão na construção do seu objeto
 enum TelaSelecionada {

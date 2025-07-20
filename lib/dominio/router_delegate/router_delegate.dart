@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:skill_playground/apresentacao/screens/animation_controller_screen.dart';
-import 'package:skill_playground/apresentacao/screens/async_isolates.dart';
-import 'package:skill_playground/apresentacao/screens/bloc_screen.dart';
-import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
-import 'package:skill_playground/apresentacao/screens/custom_slivers.dart';
-import 'package:skill_playground/apresentacao/screens/navigator_2_route_screen.dart';
-import 'package:skill_playground/apresentacao/screens/performance_and_repaints_screen.dart';
-import 'package:skill_playground/apresentacao/screens/platform_channels_screen.dart';
-import 'package:skill_playground/apresentacao/screens/stream_builder_error_handling.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/8_animation_controller/animation_controller_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/7_isolate/isolate_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/4_bloc/bloc_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/2_custom_painter/custom_painter_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/10_slivers/slivers_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/3_router_2/router_2_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/6_performance/performance_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/5_platform_channels/platform_channels_screen.dart';
+import 'package:skill_playground/apresentacao/screens/primary_screens/9_stream_builder/stream_builder_screen.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
 import 'package:skill_playground/dominio/utils/indice_botoes.dart';
-import '../../apresentacao/screens/home_page_screen.dart';
+import '../../apresentacao/screens/primary_screens/1_home/home_screen.dart';
 
 class MyRouterDelegate extends RouterDelegate<int>
     with ChangeNotifier, PopNavigatorRouterDelegateMixin<int> {
