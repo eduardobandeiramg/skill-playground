@@ -6,10 +6,12 @@ import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
 import 'package:skill_playground/dominio/router_delegate/router_delegate.dart';
 import 'package:skill_playground/dominio/utils/dimensoes.dart';
+import 'locator.dart';
 
 void main() {
   Get.put(NavigationController());
   debugRepaintRainbowEnabled = false;
+  setupLocator();
   runApp(BlocProvider<CounterCubit>(create: (_) => CounterCubit(), child: MyApp()));
 }
 

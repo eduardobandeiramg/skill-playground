@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:skill_playground/apresentacao/cards/card_performance_screen.dart';
 import 'package:skill_playground/dominio/utils/dimensoes.dart';
+import 'package:skill_playground/locator.dart';
 
 class PerformanceScreen extends StatelessWidget {
-  const PerformanceScreen({super.key});
+  final CardPerformanceScreen cartao;
+
+  PerformanceScreen({super.key}) : cartao = getIt<CardPerformanceScreen>();
 
   @override
   Widget build(BuildContext context) {
@@ -22,37 +25,7 @@ class PerformanceScreen extends StatelessWidget {
             ),
           ),
           Container(height: Dimensoes.altura * 0.3, color: Color(0xFF8FB2EC)),
-          Expanded(
-            child: ListView(
-              children: [
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-                CardPerformanceScreen(),
-              ],
-            ),
-          ),
+          Expanded(child: ListView(children: [cartao, cartao, cartao])),
         ],
       ),
     );
