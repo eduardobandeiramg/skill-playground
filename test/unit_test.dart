@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:skill_playground/dados/Streams/simulador_stream.dart';
+import 'package:skill_playground/dados/streams/simulador_stream.dart';
 import 'package:skill_playground/dominio/controllers/fibonacci_calculator.dart';
 
 void main(){
