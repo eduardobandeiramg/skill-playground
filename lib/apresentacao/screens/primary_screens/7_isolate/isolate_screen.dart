@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:skill_playground/dominio/controllers/fibonacci_value_controller.dart';
-import 'package:skill_playground/dominio/utils/dimensoes.dart';
+import 'package:skill_playground/utils/dimensoes.dart';
 
 class AsyncIsolates extends StatefulWidget {
   const AsyncIsolates({super.key});

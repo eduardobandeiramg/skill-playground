@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skill_playground/dados/Streams/simulador_stream.dart';
-import 'package:skill_playground/dominio/utils/dimensoes.dart';
+import 'package:skill_playground/utils/dimensoes.dart';
 
 class StreamBuilderErrorHandling extends StatefulWidget {
   const StreamBuilderErrorHandling({super.key});

@@ -10,7 +10,7 @@ import 'package:skill_playground/apresentacao/screens/primary_screens/6_performa
 import 'package:skill_playground/apresentacao/screens/primary_screens/5_platform_channels/platform_channels_screen.dart';
 import 'package:skill_playground/apresentacao/screens/primary_screens/9_stream_builder/stream_builder_screen.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
-import 'package:skill_playground/dominio/utils/indice_botoes.dart';
+import 'package:skill_playground/utils/indice_botoes.dart';
 import '../../apresentacao/screens/primary_screens/1_home/home_screen.dart';
 
 class MyRouterDelegate extends RouterDelegate<int>

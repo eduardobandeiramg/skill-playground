@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:skill_playground/dominio/utils/dimensoes.dart';
+import 'package:skill_playground/utils/dimensoes.dart';
 
 class CardPerformanceScreen extends StatefulWidget {
   const CardPerformanceScreen({super.key});

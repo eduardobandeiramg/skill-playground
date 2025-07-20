@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skill_playground/apresentacao/cards/card_performance_screen.dart';
-import 'package:skill_playground/dominio/utils/dimensoes.dart';
+import 'package:skill_playground/utils/dimensoes.dart';
 import 'package:skill_playground/locator.dart';
 
 class PerformanceScreen extends StatelessWidget {
