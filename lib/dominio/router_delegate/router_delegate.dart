@@ -4,6 +4,7 @@ import 'package:skill_playground/apresentacao/screens/animation_controller_scree
 import 'package:skill_playground/apresentacao/screens/async_isolates.dart';
 import 'package:skill_playground/apresentacao/screens/bloc_screen.dart';
 import 'package:skill_playground/apresentacao/screens/custom_painter_screen.dart';
+import 'package:skill_playground/apresentacao/screens/custom_slivers.dart';
 import 'package:skill_playground/apresentacao/screens/navigator_2_route_screen.dart';
 import 'package:skill_playground/apresentacao/screens/performance_and_repaints_screen.dart';
 import 'package:skill_playground/apresentacao/screens/platform_channels_screen.dart';
@@ -41,6 +42,7 @@ class MyRouterDelegate extends RouterDelegate<int>
           MaterialPage(child: AnimationControllerScreen()),
         if (tela == TelaSelecionada.streamBuilderErrorHandling)
           MaterialPage(child: StreamBuilderErrorHandling()),
+        if (tela == TelaSelecionada.customSlivers) MaterialPage(child: CustomSlivers()),
       ],
       onPopPage: (route, result) {
         if (!route.didPop(result)) return false;
