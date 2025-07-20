@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:skill_playground/dominio/controllers/fibonacci_value_controller.dart';
+import 'package:skill_playground/dominio/state_managers/getx/fibonacci_value_controller.dart';
 import 'package:skill_playground/utils/dimensoes.dart';
 
 class AsyncIsolates extends StatefulWidget {
@@ -11,12 +11,12 @@ class AsyncIsolates extends StatefulWidget {
 }
 
 class _AsyncIsolatesState extends State<AsyncIsolates> {
-  late final CalculoFibonacciStateManagement calculoFibonacciStateManagement;
+  late final FibonacciValueStateManagement calculoFibonacciStateManagement;
 
   @override
   void initState() {
     super.initState();
-    calculoFibonacciStateManagement = CalculoFibonacciStateManagement();
+    calculoFibonacciStateManagement = FibonacciValueStateManagement();
     calculoFibonacciStateManagement.calculaFibonacci(45);
   }
 
@@ -32,7 +32,7 @@ class _AsyncIsolatesState extends State<AsyncIsolates> {
         children: [
           Padding(
             padding: EdgeInsets.all(Dimensoes.altura * 0.1),
-            child: Text("Resultado do cálculo pesado:"),
+            child: Text("Resultado do cálculo do 45º valor da sequência de Fibonacci:"),
           ),
           Obx(() {
             return calculoFibonacciStateManagement.resultado == 0
