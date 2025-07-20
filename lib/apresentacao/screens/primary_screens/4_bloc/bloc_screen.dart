@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
+import 'package:skill_playground/dominio/controllers/counter_cubit.dart';
 import 'package:skill_playground/utils/dimensoes.dart';
 
 class BlocScreen extends StatefulWidget {
