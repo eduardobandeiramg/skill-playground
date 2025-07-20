@@ -60,7 +60,5 @@ class MyRouterDelegate extends RouterDelegate<int>
   }
 
   @override
-  Future<void> setNewRoutePath(int configuration) async {
-    throw Exception();
-  }
+  Future<void> setNewRoutePath(int configuration) async {}
 }

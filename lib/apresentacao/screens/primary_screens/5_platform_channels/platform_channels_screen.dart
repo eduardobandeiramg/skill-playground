@@ -36,7 +36,10 @@ class _PlatformChannelsScreenState extends State<PlatformChannelsScreen> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [Center(child: Text("Sistema Operacional:")), Center(child: Text(so!))],
+        children: [
+          Center(child: Text("Sistema Operacional:")),
+          Center(child: Text(so!, key: Key("sistema_operacional"))),
+        ],
       ),
     );
   }

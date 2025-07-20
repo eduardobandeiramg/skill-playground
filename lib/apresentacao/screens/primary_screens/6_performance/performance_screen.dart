@@ -24,7 +24,7 @@ class PerformanceScreen extends StatelessWidget {
               child: Text("Parte imutável:"),
             ),
           ),
-          Container(height: Dimensoes.altura * 0.3, color: Color(0xFF8FB2EC)),
+          Container(height: Dimensoes.altura * 0.3, color: Color(0xFF8FB2EC), key: Key("container_tela_5"),),
           Expanded(
             child: ListView(
               children: [

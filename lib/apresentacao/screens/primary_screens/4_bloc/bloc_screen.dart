@@ -26,7 +26,7 @@ class _BlocScreenState extends State<BlocScreen> {
             child: BlocBuilder<CounterCubit, int>(
               buildWhen: (previous, current) => current % 2 == 0,
               builder: (context, count) {
-                return Text('Contador: $count', style: TextStyle(fontSize: 40));
+                return Text(key: Key("texto_tela_bloc"), 'Contador: $count', style: TextStyle(fontSize: 40));
               },
             ),
           ),
@@ -38,6 +38,7 @@ class _BlocScreenState extends State<BlocScreen> {
                   context.read<CounterCubit>().increment();
                 },
                 child: ElevatedButton(
+                  key: Key("botao_tela_bloc"),
                   style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Color(0xFF2F6BD5))),
                   onPressed: () {},
                   child: Text("Duplo-clique para contar!", style: TextStyle(color: Colors.white)),

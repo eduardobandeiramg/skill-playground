@@ -33,12 +33,12 @@ class _CardPerformanceScreenState extends State<CardPerformanceScreen> {
           borderRadius: BorderRadius.circular(15),
           color: Color(0xFFB9CFF3),
         ),
-        child: Center(child: valor == null ? Text("gerando números aleatórios") : Text("$valor")),
+        child: Center(child: valor == null ? Text(key: Key("texto_cartao_performance"), "gerando números aleatórios") : Text("$valor")),
       ),
     );
   }
 }
 
 int geraNumero() {
-  return Random().nextInt(100000000);
+  return Random().nextInt(1000000000);
 }
