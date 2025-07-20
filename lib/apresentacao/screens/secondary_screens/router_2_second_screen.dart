@@ -19,9 +19,18 @@ class Router2SecondScreen extends StatelessWidget {
         ),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(height: Dimensoes.altura * 0.25, child: Icon(Icons.thumb_up_alt_rounded)),
+          Center(
+            child: Container(
+              child: Icon(
+                Icons.thumb_up_alt_rounded,
+                size: Dimensoes.altura * 0.25,
+                color: Color(0xFF8FB2EC),
+              ),
+            ),
+          ),
         ],
       ),
     );
