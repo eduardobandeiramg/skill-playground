@@ -9,6 +9,7 @@ import 'package:skill_playground/apresentacao/screens/primary_screens/3_router_2
 import 'package:skill_playground/apresentacao/screens/primary_screens/6_performance/performance_screen.dart';
 import 'package:skill_playground/apresentacao/screens/primary_screens/5_platform_channels/platform_channels_screen.dart';
 import 'package:skill_playground/apresentacao/screens/primary_screens/9_stream_builder/stream_builder_screen.dart';
+import 'package:skill_playground/apresentacao/screens/secondary_screens/router_2_second_screen.dart';
 import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
 import 'package:skill_playground/utils/indice_botoes.dart';
 import '../../apresentacao/screens/primary_screens/1_home/home_screen.dart';
@@ -43,10 +44,16 @@ class MyRouterDelegate extends RouterDelegate<int>
         if (tela == TelaSelecionada.streamBuilderErrorHandling)
           MaterialPage(child: StreamBuilderErrorHandling()),
         if (tela == TelaSelecionada.customSlivers) MaterialPage(child: CustomSlivers()),
+        if (tela == TelaSelecionada.secondaryScreenFromNavigatorScreen)
+          MaterialPage(child: Router2SecondScreen()),
       ],
       onPopPage: (route, result) {
         if (!route.didPop(result)) return false;
-        pageController.voltarParaHome();
+        if (tela == TelaSelecionada.secondaryScreenFromNavigatorScreen) {
+          pageController.voltarPara(TelaSelecionada.navigator);
+        } else {
+          pageController.voltarParaHome();
+        }
         return true;
       },
     );

@@ -9,6 +9,10 @@ class NavigationController extends GetxController{
     telaAtual.value = tela;
   }
 
+  void voltarPara(TelaSelecionada tela){
+    telaAtual.value = tela;
+  }
+
   void voltarParaHome() => telaAtual.value = TelaSelecionada.home;
 
   final teste = "".obs;

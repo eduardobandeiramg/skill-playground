@@ -15,6 +15,7 @@ enum TelaSelecionada {
   streamBuilderErrorHandling,
   customSlivers,
   dependencyInjection,
+  secondaryScreenFromNavigatorScreen
 }
 
 // Mapa com informações sobre o título do botão e a tela para o qual ele vai navegar
