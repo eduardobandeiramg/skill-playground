@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skill_playground/apresentacao/cards/card_home_page.dart';
-import 'package:skill_playground/utils/indice_botoes.dart';
+import 'package:skill_playground/apresentacao/navigation/indice_botoes.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

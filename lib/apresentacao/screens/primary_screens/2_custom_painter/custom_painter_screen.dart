@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../dominio/controllers/navigation_controller.dart';
+import '../../../navigation/navigation_controller.dart';
 
 class CustomPainterScreen extends StatelessWidget {
   const CustomPainterScreen({super.key});

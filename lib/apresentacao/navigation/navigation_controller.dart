@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:skill_playground/utils/indice_botoes.dart';
+import 'package:skill_playground/apresentacao/navigation/indice_botoes.dart';
 
 class NavigationController extends GetxController{
 

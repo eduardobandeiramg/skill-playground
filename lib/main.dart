@@ -3,7 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:skill_playground/dominio/controllers/bloc_ssot.dart';
-import 'package:skill_playground/dominio/controllers/navigation_controller.dart';
+import 'package:skill_playground/apresentacao/navigation/navigation_controller.dart';
 import 'package:skill_playground/dominio/router_delegate/router_delegate.dart';
 import 'package:skill_playground/utils/dimensoes.dart';
 import 'locator.dart';

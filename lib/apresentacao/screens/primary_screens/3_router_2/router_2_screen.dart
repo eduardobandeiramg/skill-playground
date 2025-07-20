@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:skill_playground/utils/indice_botoes.dart';
-import '../../../../dominio/controllers/navigation_controller.dart';
+import 'package:skill_playground/apresentacao/navigation/indice_botoes.dart';
+import '../../../navigation/navigation_controller.dart';
 
 class Navigator2RouteDelegate extends StatelessWidget {
   final controller = Get.find<NavigationController>();
