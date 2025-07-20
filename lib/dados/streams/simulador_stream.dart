@@ -1,5 +1,7 @@
 class SimuladorStream{
 
+  const SimuladorStream();
+
   Stream<String> listaComprasStream() async* {
     List listaCompras = ["arroz", "feijao", "batata", "banana", "laranja", "leite"];
     for(var item in listaCompras){
