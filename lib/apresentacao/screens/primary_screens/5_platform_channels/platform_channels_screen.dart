@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:skill_playground/dominio/method_channels/so_method_channel.dart';
+import 'package:skill_playground/dominio/controllers/get_operational_system_controller.dart';
 
 class PlatformChannelsScreen extends StatefulWidget {
   const PlatformChannelsScreen({super.key});
