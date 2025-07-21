@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:skill_playground/dados/Streams/simulador_stream.dart';
+import 'package:skill_playground/dados/streams/simulador_stream.dart';
 import 'package:skill_playground/utils/dimensoes.dart';
 
 class StreamBuilderErrorHandling extends StatelessWidget {
