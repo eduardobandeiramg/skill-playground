@@ -16,6 +16,7 @@ class _AsyncIsolatesState extends State<AsyncIsolates> {
   @override
   void initState() {
     super.initState();
+    // chama o metodo de compute mediante inicialização do estado da tela
     calculoFibonacciStateManagement = FibonacciValueStateManagement();
     calculoFibonacciStateManagement.calculaFibonacci(45);
   }
@@ -34,6 +35,7 @@ class _AsyncIsolatesState extends State<AsyncIsolates> {
             padding: EdgeInsets.all(Dimensoes.altura * 0.1),
             child: Text("Resultado do cálculo do 45º valor da sequência de Fibonacci:"),
           ),
+          // Observador que aguarda resultado do calculo
           Obx(() {
             return calculoFibonacciStateManagement.resultado == 0
                 ? Text("Ainda calculando...")

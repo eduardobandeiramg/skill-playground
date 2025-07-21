@@ -6,6 +6,7 @@ import 'package:skill_playground/locator.dart';
 class PerformanceScreen extends StatelessWidget {
   final CardPerformanceScreen cartao;
 
+  // mediante inicialização, a tela recebe seu singleton do cartao
   PerformanceScreen({super.key}) : cartao = getIt<CardPerformanceScreen>();
 
   @override

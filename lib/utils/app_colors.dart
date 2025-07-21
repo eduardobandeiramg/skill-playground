@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// variavel global que define a paleta de cores padrao do app, sendo a 500 a principal
 const MaterialColor corDoApp = MaterialColor(
   0xFF2F6BD5,
   <int, Color>{

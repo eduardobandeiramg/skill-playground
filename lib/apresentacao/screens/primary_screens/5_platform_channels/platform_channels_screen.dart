@@ -19,6 +19,7 @@ class _PlatformChannelsScreenState extends State<PlatformChannelsScreen> {
   @override
   void initState() {
     super.initState();
+    // ao iniciar o estado da tela, cria o objeto e chama a função que implementa methodchannel
     buscaSO().then((retorno) {
       setState(() {
         so = retorno;

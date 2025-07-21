@@ -23,6 +23,7 @@ class _BlocScreenState extends State<BlocScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Center(
+            // Observador do single source of truth que só 'builda' quando o contador é par
             child: BlocBuilder<CounterCubit, int>(
               buildWhen: (previous, current) => current % 2 == 0,
               builder: (context, count) {
@@ -35,6 +36,7 @@ class _BlocScreenState extends State<BlocScreen> {
               padding: EdgeInsets.only(bottom: Dimensoes.altura * 0.25),
               child: GestureDetector(
                 onDoubleTap: () {
+                  // A variavel que armazena o contador no single source of truth é incrementada
                   context.read<CounterCubit>().increment();
                 },
                 child: ElevatedButton(
