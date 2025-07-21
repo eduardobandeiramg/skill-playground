@@ -18,11 +18,7 @@ class CardHomePage extends StatelessWidget {
       child: InkWell(
         onTap: () {
           controller.navegarPara(telaANavegar);
-          //controller.navegarPara(infosBotao[telaANavegar]["tela"]);
         },
-        /*        onTap: () async {
-          return Get.to(CustomPainterScreen());
-        },*/
         child: Container(
           height: Dimensoes.altura * 0.1,
           decoration: BoxDecoration(
