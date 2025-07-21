@@ -1,13 +1,16 @@
 # Skill PlayGround
 
-Este projeto foi desenvolvido ao longo do processo seletivo da empresa 'for people'. Neste projeto,
+Este projeto foi desenvolvido ao longo do processo seletivo da empresa 'for people'.
+
+Neste projeto,
 foi solicitado a mim que desenvolvesse um app que consistisse de uma tela principal com 10 cards,
 cada um deles levando, quando clicado, a uma tela que demonstrasse conceitos de programação com
 Flutter.
 
 A arquitetura adotada neste projeto foi a arquitetura limpa (do inglês 'Clean Architecture'). Neste
 padrão arquitetural, os componentes do sistema são organizados em camadas abstratas concêntricas,
-separando as responsabilidades de cada uma de acordo com a 'proximidade' dos componentes com o núcleo-duro das regras de negócio da organização e da aplicação.
+separando as responsabilidades de cada uma de acordo com a 'proximidade' dos componentes com o
+núcleo-duro das regras de negócio da organização e da aplicação.
 
 ## Detalhamento de cada cartão
 
@@ -16,7 +19,7 @@ separando as responsabilidades de cada uma de acordo com a 'proximidade' dos com
 * Nesta tela, é demonstrado - assim como no restante do app - a navegação utilizando o Router 2.0 do
   Flutter. Esta abordagem, diferentemente do Router 1.0 (Navigator.of(contexto).push()....) permite
   lançar mão de uma navegação declarativa em detrimento de uma imperativa. Ou seja, é possivel
-  abordar a navegação como um gerenciamento de estado ao app e poder manipular a 'stack' de
+  abordar a navegação como um gerenciamento de estado do app e poder manipular a 'stack' de
   navegação, em vez de delegar tudo ao framework.
 * Nesta tela, é usado o gerenciador de estado BLoC para controlar a atualização da interface de
   usuário. Neste caso específico, o contador só funciona quando o usuário pressiona o botão com
@@ -49,8 +52,7 @@ separando as responsabilidades de cada uma de acordo com a 'proximidade' dos com
   escolha se deu devido ao fato de que os objetos (cartões) construídos nessa tela (classe) estavam,
   em um primeiro momento, acontecendo dentro da definição da classe. Isso não é uma abordagem ideal,
   uma vez que fere o princípio da responsabilidade única, além de dificultar a manutenção e/ou
-  extensão do software. Assim, optou-se por passar para a tela os cartões que esta deveria exibir *
-  *no momento de sua instanciação**. Trata-se, de forma simplificada, da definição do padrão
+  extensão do software. Assim, optou-se por passar para a tela os cartões que esta deveria exibir __no momento de sua instanciação__. Trata-se, de forma simplificada, da definição do padrão
   Singleton.
 
 ## Pacotes utilizados
@@ -67,7 +69,7 @@ separando as responsabilidades de cada uma de acordo com a 'proximidade' dos com
 ## Desafios encontrados e soluções
 
 O maior desafio encontrado ao longo da execução desta atividade foi a densidade de funcionalidades a
-serem implementadas. Enquanto algumas eu já tinha utilizado antes, outras eu tive que pesquisar e
+serem implementadas. Enquanto algumas eu já tinha utilizado antes, outras tive que pesquisar e
 aprender como implementar.
 
 Além disso, pode-se citar a incerteza na implementação da arquitetura solicitada. Por ser uma
