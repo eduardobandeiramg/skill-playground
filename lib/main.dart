@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:skill_playground/apresentacao/navigation/navigation_controller.dart';
 import 'package:skill_playground/dominio/router_delegate/router_delegate.dart';
 import 'package:skill_playground/utils/dimensoes.dart';
-import 'dominio/state_managers/bloc/counter_cubit.dart';
+import 'apresentacao/state_managers/bloc/counter_cubit.dart';
 import 'locator.dart';
 
 void main() {
